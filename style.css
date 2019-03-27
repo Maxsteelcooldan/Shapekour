@@ -15,8 +15,7 @@ button {
   display: inline-block;
   font-size: 24px;
   margin: 4px 2px;
-  -webkit-transition-duration: 0.7s; /* Safari */
-  transition-duration: 0.7s;
+  transition:300ms ease;
   cursor: pointer;
   width: 56px;
   height: 28px;
