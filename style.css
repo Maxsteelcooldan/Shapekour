@@ -7,6 +7,7 @@ body  {
 
 h1  {
   color: white;
+  top:5em
 }
 
 button {
@@ -29,4 +30,5 @@ button {
 .button1 {
   background-color: #008CBA;
   color: white;
+  top:5.5em
 }
