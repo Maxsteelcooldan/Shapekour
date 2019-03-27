@@ -1,8 +1,8 @@
 body  {
-background-color:powderblue;
-}
-div {
-font-family:Helvetica,sans-serif;
+  background-color:powderblue;
+  padding:0;
+  margin:0;
+  font-family:Helvetica,sans-serif;
 }
 
 .button {
