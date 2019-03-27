@@ -5,8 +5,8 @@ body  {
   font-family:Helvetica,sans-serif;
 }
 
-.button {
-  background-color: #4CAF50; /* Green */
+button {
+  background-color: #4CAF50;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -30,5 +30,3 @@ body  {
   background-color: #4CAF50;
   color: white;
 }
-
-</body>
