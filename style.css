@@ -36,8 +36,13 @@ button {
 
 .secret {
 display:none;
+color:white; 
 }
 
+span {
+color:white;
+
+}
 
 span:hover+div {
 display:block
