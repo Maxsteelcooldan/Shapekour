@@ -19,7 +19,12 @@ button {
   padding:8px 16px;
   cursor:pointer;
   transition: 0.8s;ease
+  border: 3px
+
+
 }
+
+
 
 #play-btn:hover {
   background-color: white; 
