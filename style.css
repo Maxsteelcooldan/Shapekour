@@ -49,10 +49,10 @@ font-family:Helvicta,sans-serif;
 span:hover+div {
 display:block
 }
-canvas {
+ 
   canvas {
     border: 1px solid white;
   }
-}
+
 
 
