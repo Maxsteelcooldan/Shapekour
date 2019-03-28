@@ -37,11 +37,13 @@ button {
 .secret {
 display:none;
 color:white; 
+font-family:Helvicta,sans-serif;
+  
 }
 
 span {
 color:white;
-
+font-family:Helvicta,sans-serif;
 }
 
 span:hover+div {
