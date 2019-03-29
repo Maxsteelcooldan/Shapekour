@@ -58,9 +58,10 @@ display:block
 }
  
   canvas {
-    border: 1px solid white;
+    border: 3px solid white;
     margin-top:18%;
-    background:powderblue
+    background:powderblue;
+  
   }
 
 
