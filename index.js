@@ -23,7 +23,6 @@ function rect(x, y, width, height, color) {
     yat.restore(); 
   }
 }
-var player = new rect(10, 10, 40, 40, 'red');
 var everything = ()=>{
   yat.clearRect(0, 0, 600, 500);
   player = new rect(10, 10, 40, 40, 'red');
