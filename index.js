@@ -12,16 +12,14 @@ function rect(x, y, width, height, color) {
   this.x = x || 0;
   this.y = y || 0; 
   this.color = color || 'black';
-  yat.fillStyle = color;
-  yat.fillRect(this.x, this.y, this.width, this.height);
-  this.refresh = ()=>{
+  (this.refresh = ()=>{
     yat.save();
     yat.translate(this.x, this.y); 
     yat.rotate(this.angle);
     yat.fillStyle = color;
     yat.fillRect(this.width/-2,this.height/-2,this.width,this.height); 
     yat.restore(); 
-  }
+  })();
 }
 var everything = ()=>{
   yat.clearRect(0, 0, 600, 500);
