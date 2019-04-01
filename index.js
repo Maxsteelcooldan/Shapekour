@@ -21,7 +21,9 @@ function rect(x, y, width, height, color) {
     yat.restore(); 
   })();
 }
-var player = new rect(10, 10, 40, 40, 'red');
+var player_x = 10;
+var player_y = 10;
+var player = new rect(player_x, player_y, 40, 40, 'red');
 var one = new rect(100,150,100,25,'#63615b');
 var moveright = true;
 var levels = [()=>{
