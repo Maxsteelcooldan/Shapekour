@@ -22,7 +22,7 @@ function rect(x, y, width, height, color) {
   })();
 }
 var player = new rect(10, 10, 40, 40, 'red');
-var d = new rect(100,50,100,100,'#63615b');
+var d = new rect(100,150,100,50,'#63615b');
 var moveright = true;
 var everything = ()=>{
   yat.clearRect(0, 0, 600, 500);
