@@ -22,9 +22,11 @@ function rect(x, y, width, height, color) {
   })();
 }
 var player = new rect(10, 10, 40, 40, 'red');
+var d = new rect(100,100,100,100)
 var everything = ()=>{
   yat.clearRect(0, 0, 600, 500);
-  player.x++;
+  if(d.x>=cnvs.width){d.x--}
+  else{d.x++}
   player.refresh();
+  d.refresh();
 }
-new rect(100,100,100,100)
