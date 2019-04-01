@@ -28,8 +28,8 @@ var ob = [new rect(100,150,100,25,'#63615b')];
 var moveright = true;
 var levels = [()=>{
   yat.clearRect(0, 0, 600, 500);
-  if(moveright){d.x+=4}
-  else{d.x-=4}
+  if(moveright){ob[0].x+=4}
+  else{ob[0].x-=4}
   if(ob[0].x>=cnvs.width-50){moveright=false}
   else if (ob[0].x<=50){moveright=true}
   player.refresh();
