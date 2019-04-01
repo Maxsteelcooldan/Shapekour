@@ -23,7 +23,7 @@ function rect(x, y, width, height, color) {
 }
 var player_x = 50;
 var player_y = 50;
-var player = new rect(player_x, player_y, 50, 50, 'red');
+var player = new rect(player_x, player_y, 25, 25, 'red');
 var ob = [new rect(100,180,100,25,'grey'),new rect(0,50,150,20, 'grey')];
 var moveright = true;
 var levels = [()=>{
