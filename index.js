@@ -27,4 +27,4 @@ var everything = ()=>{
   player.x++;
   player.refresh();
 }
-
+new rect(100,100,100,100)
