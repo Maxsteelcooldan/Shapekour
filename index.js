@@ -24,14 +24,14 @@ function rect(x, y, width, height, color) {
 var player_x = 10;
 var player_y = 10;
 var player = new rect(player_x, player_y, 40, 40, 'red');
-var one = new rect(100,150,100,25,'#63615b');
+var ob = [new rect(100,150,100,25,'#63615b')];
 var moveright = true;
 var levels = [()=>{
   yat.clearRect(0, 0, 600, 500);
-  if (moveright) {d.x+=4}
-  else {d.x-=4}
-  if(d.x>=cnvs.width-50){moveright=false}
-  else if (d.x<=50){moveright=true}
+  if(moveright){d.x+=4}
+  else{d.x-=4}
+  if(ob[0].x>=cnvs.width-50){moveright=false}
+  else if (ob[0].x<=50){moveright=true}
   player.refresh();
-  d.refresh();
+  ob.forEach((index)=>index.refresh());
 }]
