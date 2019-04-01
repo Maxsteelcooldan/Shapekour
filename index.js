@@ -22,14 +22,14 @@ function rect(x, y, width, height, color) {
   })();
 }
 var player = new rect(10, 10, 40, 40, 'red');
-var d = new rect(100,100,100,100);
+var d = new rect(100,100,100,100,'grey');
 var moveright = true;
 var everything = ()=>{
   yat.clearRect(0, 0, 600, 500);
   if (moveright) {d.x++}
   else {d.x--}
   if(d.x>=cnvs.width-50){moveright=false}
-  else{moveright=true}
+  else if (d.x===50){moveright=true}
   player.refresh();
   d.refresh();
 }
