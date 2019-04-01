@@ -2,7 +2,7 @@ var game;
 document.querySelector('#play-btn').addEventListener('click',()=>{
   document.querySelector('#home').style.display="none";
   document.querySelector('#game').style.display="block";
-  game = setInterval(everything, 30);
+  game = setInterval(levels[0], 30);
 });
 cnvs = document.querySelector('canvas');
 yat = cnvs.getContext('2d');
@@ -22,9 +22,9 @@ function rect(x, y, width, height, color) {
   })();
 }
 var player = new rect(10, 10, 40, 40, 'red');
-var d = new rect(100,150,100,50,'#63615b');
+var one = new rect(100,150,100,25,'#63615b');
 var moveright = true;
-var everything = ()=>{
+var levels = [()=>{
   yat.clearRect(0, 0, 600, 500);
   if (moveright) {d.x+=4}
   else {d.x-=4}
@@ -32,4 +32,4 @@ var everything = ()=>{
   else if (d.x<=50){moveright=true}
   player.refresh();
   d.refresh();
-}
+}]
