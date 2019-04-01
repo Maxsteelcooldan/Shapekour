@@ -40,7 +40,7 @@ document.onkeyup=(e)=>key[e.key.toLowerCase()]=false;
 setInterval(()=>{
   if(key['w']){
     //W is pressed  
-  }if(key('control'){
+  }if(key['control']){
     //Control is presed    
   }
 }, 15);
