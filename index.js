@@ -24,7 +24,7 @@ function rect(x, y, width, height, color) {
 var player_x = 10;
 var player_y = 10;
 var player = new rect(player_x, player_y, 40, 40, 'red');
-var ob = [new rect(100,180,100,25,'grey'),new rect(0,45,150,20, 'grey')];
+var ob = [new rect(100,180,100,25,'grey'),new rect(0,50,150,20, 'grey')];
 var moveright = true;
 var levels = [()=>{
   yat.clearRect(0, 0, 600, 500);
