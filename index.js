@@ -23,7 +23,7 @@ function rect(x, y, width, height, color) {
   })();
 }
 var player = new rect(25, 25, 25, 25, 'red');
-var ob = [new rect(100,180,100,25,'grey'),new rect(0,50,150,20, 'grey'), new rect(0,500,1000,40,'grey')];
+var ob = [new rect(100,180,100,25,'grey'),new rect(0,50,150,20, 'grey'), new rect(0,500,1200,40,'grey')];
 var moveright = true;
 var levels = [()=>{
   yat.clearRect(0, 0, 600, 500);
