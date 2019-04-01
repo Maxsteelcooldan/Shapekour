@@ -34,4 +34,9 @@ var levels = [()=>{
   player.refresh();
   ob.forEach((index)=>index.refresh());
 }];
-
+key={}
+document.onkeypress=(e)=>key[e.key.toLowerCase()]=e.type=true;
+document.onkeyup=(e)=>key[e.key.toLowerCase()]=false;
+setInterval(()=>{
+  console.log(key);
+}, 15);
