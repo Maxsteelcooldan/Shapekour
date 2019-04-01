@@ -28,7 +28,7 @@ var everything = ()=>{
   yat.clearRect(0, 0, 600, 500);
   if (moveright) {d.x++}
   else {d.x--}
-  if(d.x>=cnvs.width){moveright=false}
+  if(d.x>=cnvs.width-50){moveright=false}
   else{moveright=true}
   player.refresh();
   d.refresh();
