@@ -34,13 +34,11 @@ var levels = [()=>{
   player.refresh();
   ob.forEach((index)=>index.refresh());
 }];
-key={}
-document.onkeypress=(e)=>key[e.key.toLowerCase()]=e.type=true;
-document.onkeyup=(e)=>key[e.key.toLowerCase()]=false;
-setInterval(()=>{
-  if(key['w']){
-    //W is pressed  
-  }if(key['control']){
-    //Control is presed    
+
+var main = document.querySelector('#main')
+$(document).keydown((e)=>{
+  var position = $("#main").position();
+  key=e.key.toLowerCase();
+  if(key=='w'){
+    $("#main").css('top', position.top - 20 + 'px');
   }
-}, 15);
