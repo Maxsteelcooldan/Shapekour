@@ -51,11 +51,10 @@ setInterval(()=>{
 }, 15);
 var levels = [()=>{
   yat.clearRect(0, 0, 600, 500);
-  if(moveright){ob[0].x+=4}
-  else{ob[0].x-=4}
-  if (player.y<cnvs.height-12.5){player.y+=gravity}
+  if(player.y<cnvs.height-12.5){player.y+=gravity}
+  ob[0].x=(moveright)?ob[0].x+4:ob[0].x-4;
   if(ob[0].x>=cnvs.width-50){moveright=false}
-  else if (ob[0].x<=50){moveright=true};
+  else if(ob[0].x<=50){moveright=true};
   player.refresh();
   ob.forEach((index)=>index.refresh());
 }];
