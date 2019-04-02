@@ -42,3 +42,13 @@ $(document).keydown((e)=>{
   if(key=='w'){
     $("#main").css('top', position.top - 20 + 'px');
   }
+      if(key=='a'){
+    $("#main").css('left', position.left - 20 + 'px');
+  }
+   if(key=='d'){
+    $("#main").css('left', position.left + 20 + 'px');
+  }
+  if(key=='s'){
+    $("#main").css('top', position.top + 20 + 'px');
+  }
+});
