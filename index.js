@@ -44,4 +44,7 @@ setInterval(()=>{
   }if(key['a']){
     player.x-=3;
   }
+  
+ if (key['w'])
+player.y+=3
 }, 15);
