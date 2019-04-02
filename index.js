@@ -22,7 +22,7 @@ function rect(x, y, width, height, color) {
     yat.restore(); 
   })();
 }
-var collision = (a,b) {
+var collision = (a,b)=>{
   if (a.x - a.width/2 < b.x + b.width/2 &&
    a.x + a.width/2 > b.x - b.width/2 &&
    a.y - a.height/2 < b.y + b.height/2 &&
