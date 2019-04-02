@@ -25,10 +25,12 @@ function rect(x, y, width, height, color) {
 var player = new rect(25, 25, 25, 25, 'red');
 var ob = [new rect(100,180,100,25,'grey'),new rect(0,50,150,20, 'grey'), new rect(0,500,1200,40,'grey'),new rect (700,420,900,25,'gray'), new rect (175,400,20,200,'grey'), new rect (250,366,20,134,'grey')];
 var moveright = true;
+var gravity=0.4;
 var levels = [()=>{
   yat.clearRect(0, 0, 600, 500);
   if(moveright){ob[0].x+=4}
   else{ob[0].x-=4}
+  if (player.y>cnvs.height-12.5){player.y+=gravity}
   if(ob[0].x>=cnvs.width-50){moveright=false}
   else if (ob[0].x<=50){moveright=true}
   player.refresh();
