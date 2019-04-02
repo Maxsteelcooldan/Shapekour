@@ -39,9 +39,9 @@ key={}
 document.onkeypress=(e)=>key[e.key.toLowerCase()]=e.type=true;
 document.onkeyup=(e)=>key[e.key.toLowerCase()]=false;
 setInterval(()=>{
-  if(key['w']){
-    //W is pressed  
-  }if(key['control']){
-    //Control is presed    
+  if(key['d']){
+    player.x+=3;  
+  }if(key['a']){
+    player.x-=3;
   }
 }, 15);
