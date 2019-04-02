@@ -53,3 +53,4 @@ $(document).keydown((e)=>{
   }
 });
 var gravity= 0.4;
+var level=1;
