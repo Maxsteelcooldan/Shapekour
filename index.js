@@ -35,22 +35,13 @@ var levels = [()=>{
   ob.forEach((index)=>index.refresh());
 }];
 
-var main = document.querySelector('#main')
-$(document).keydown((e)=>{
-  var position = $("#main").position();
-  key=e.key.toLowerCase();
-  if(key=='w'){
-    $("#main").css('top', position.top - 20 + 'px');
+key={}
+document.onkeypress=(e)=>key[e.key.toLowerCase()]=e.type=true;
+document.onkeyup=(e)=>key[e.key.toLowerCase()]=false;
+setInterval(()=>{
+  if(key['w']){
+    //W is pressed  
+  }if(key['control']){
+    //Control is presed    
   }
-      if(key=='a'){
-    $("#main").css('left', position.left - 20 + 'px');
-  }
-   if(key=='d'){
-    $("#main").css('left', position.left + 20 + 'px');
-  }
-  if(key=='s'){
-    $("#main").css('top', position.top + 20 + 'px');
-  }
-});
-var gravity= 0.4;
-var level=1;
+}, 15);
