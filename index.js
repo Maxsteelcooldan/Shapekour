@@ -31,8 +31,6 @@ var collision = (a,b)=>{
   }
   return false;
 }
-
-}
 var player = new rect(25, 25, 25, 25, 'red');
 var ob = [new rect(100,180,100,25,'grey'),new rect(0,50,150,20, 'grey'), new rect(0,500,1200,40,'grey'),new rect (700,420,900,25,'gray'), new rect (175,400,20,200,'grey'), new rect (250,366,20,134,'grey')];
 var moveright = true;
